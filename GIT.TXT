@@ -1,0 +1,36 @@
+Sempre que você criar um novo arquivo .py ou editar um que já existe, 
+você só precisa seguir este ciclo de 3 comandos no terminal do VS Code:
+Passo a Passo: O Ciclo DiárioSempre que terminar uma alteração, 
+salve os arquivos no VS Code e faça o seguinte:
+1. Preparar os arquivos (add)
+Diga ao Git quais alterações você quer incluir no 
+próximo envio. O ponto . significa "tudo o que foi alterado".
+
+git add .
+
+2. Carimbar as alterações (commit)
+Crie uma "versão" com uma mensagem curta descrevendo o que você fez. 
+Isso ajuda muito a se organizar depois.
+
+git commit -m "Explique aqui o que você mudou ou criou"
+
+3. Enviar para o GitHub (push)
+Mande as alterações do seu PC para o repositório online.
+
+git push 
+
+Resumo Visual para não esquecer:
+Comando                 O que ele faz?             Quando usar?
+git add .               Seleciona as mudanças.     Sempre que terminar de codar.
+git commit -m "..."     Grava a versão no seu PC.  Logo após o add.
+git push                Sobe tudo para o site.     Quando quiser atualizar o GitHub.
+
+Dicas de Ouro:
+Mensagens Curtas: Use commits como: git commit -m "Criei o script de automação" 
+   ou git commit -m "Corrigi erro no calculo.py".
+Acompanhe o Status: Se estiver na dúvida se esqueceu de salvar algo, 
+  digite git status. Ele vai te mostrar em vermelho o que não foi adicionado 
+  e em verde o que já está pronto para o commit.
+Novos Arquivos: Se você criar um arquivo novo, ele só vai para o GitHub 
+  se você rodar o git add .. Se rodar apenas o push, o arquivo novo não sobe.
+  
